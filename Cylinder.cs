@@ -8,11 +8,13 @@ namespace PoolyThePoony
 {
     internal class Cylinder : BasicShape
     {
-        private int height;
-        private int radius;
-        public Cylinder(Point point, int borderColor, int fillColor, int heigth, int radius) : base(point, borderColor, fillColor)
+        public int height;
+        public int radius;
+        public Cylinder(Point point, int borderColor, int fillColor, int height, int radius)
+           : base(point, borderColor, fillColor)
         {
-            this.height = heigth; this.radius = radius;
+            this.height = height;
+            this.radius = radius;
         }
         public override void Draw()
         {
@@ -24,7 +26,7 @@ namespace PoolyThePoony
         }
         public override double GetArea()
         {
-            return 2 * 3.14 * radius * height;
+            return 2 * 3.14 * radius * (radius + height);
         }
 
         public int GetHeight()

@@ -9,8 +9,8 @@ namespace PoolyThePoony
 {
     internal class Rectangle : BasicShape
     {
-        double height;
-        double length;
+        public double height;
+        public double length;
         public Rectangle(Point point, int borderColor, int fillColor, double height, double length) : 
             base(point, borderColor, fillColor)
         {

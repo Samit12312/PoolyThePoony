@@ -9,10 +9,12 @@ namespace PoolyThePoony
     internal class Circle : BasicShape
     {
         public int radius;
-        public Circle(Point point, int BorderColor, int radius) : base(point, BorderColor, radius)
+        public Circle(Point point, int borderColor, int fillColor, int radius)
+                : base(point, borderColor, fillColor)
         {
             this.radius = radius;
         }
+
         public override void Draw()
         {
             Console.WriteLine("Display Circle impossibility in Console Applications");

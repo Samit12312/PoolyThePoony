@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PoolyThePoony
 {
-    internal class BasicShape
+    public class BasicShape
     {
         public Point point;
         public int borderColor;

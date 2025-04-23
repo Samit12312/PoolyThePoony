@@ -20,14 +20,61 @@ namespace PoolyThePoony
         }
         public override void Draw()
         {
-            
-            for(int i = 0; i < a; i++)
+
+            if (direction == 4)
             {
-                for(int j = 0; j < i; j++)
+                for (int i = 0; i < a; i++)
                 {
-                    Console.Write("*");
+                    for (int j = 0; j < i; j++)
+                    {
+                        Console.Write(" ");
+                    }
+                    for (int k = 0; k < a - i; k++)
+                    {
+                        Console.Write("*");
+                    }
+                    Console.WriteLine();
                 }
-                Console.WriteLine();
+            }
+            if (direction == 3)
+            {
+                for (int i = 0; i < a; i++)
+                {
+                    for (int j = 0; j < a - i - 1; j++)
+                    {
+                        Console.Write(" ");
+                    }
+                    for (int k = 0; k <= i; k++)
+                    {
+                        Console.Write("*");
+                    }
+                    Console.WriteLine();
+                }
+            }
+            if (direction == 2)
+            {
+
+                for (int i = 0; i < a; i++)
+                {
+                    for (int j = 0; j < a - i; j++)
+                    {
+                        Console.Write("*");
+
+                    }
+                    Console.WriteLine();
+                }
+            }
+            if (direction == 1)
+            {
+                for (int i = 0; i < a; i++)
+                {
+                    for (int j = 0; j < i + 1; j++)
+                    {
+                        Console.Write("*");
+                    }
+
+                    Console.WriteLine();
+                }
             }
         }
         public override double GetParameter()
