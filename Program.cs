@@ -10,7 +10,7 @@ namespace PoolyThePoony
     {
         static void Main(string[] args)
         {
-                    int a = 5;
+            ShapeSystem system = new ShapeSystem(10);
             double d = 2;
 
             if(d == 2)
